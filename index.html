@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase no-indexeddb hashchange history draganddrop websockets rgba no-hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><style type="text/css"></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Dependable Security Scanning</title>
+	<meta name="viewport" content="width=device-width">
+    <style type="text/css">
+		* { margin: 0; padding: 0; }
+		html, body { height: 100%; overflow: hidden; background: rgb(242,242,242); font-family: sans-serif; }
+		#background { position: absolute; }
+		#logo { 
+			left: 50%;
+			top: 50%; 
+			margin: -64px 0 0 -51px; 
+			width: 96px; 
+			height: 145px;
+			position: absolute;
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-o-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+			-webkit-perspective: 500;
+			-moz-perspective: 500;
+			-o-perspective: 500;
+			-ms-perspective: 500;
+			perspective: 500;
+			-webkit-perspective-origin: 50% 0;
+			-moz-perspective-origin: 50% 0;
+			-o-perspective-origin: 50% 0;
+			-ms-perspective-origin: 50% 0;
+            perspective-origin: 50% 0;
+		}
+			#logo h1 { top: -35px; left: 0; width: 106px; height: 25px; position: absolute; background: url(img/html.jpg); #put another logo
+				-webkit-transform: rotateY(0) translateZ(0);
+    			-moz-transform: rotateY(0) translateZ(0);
+			    -o-transform: rotateY(0) translateZ(0);
+    			-ms-transform: rotateY(0) translateZ(0);
+                transform: rotateY(0) translateZ(0);
+			}
+			#hint { display: none; }
+			#logo figure {
+				width: 96px;
+				height: 145px;
+				display: block;
+				position: absolute;
+				background: url(img/150.png); #put logo here
+				border-top: 1px solid #e34f26;
+			}
+			#logo .front { 
+			    background-position: left; 
+			    -webkit-transform: rotateY(-45deg) translateZ(48px);
+			    -moz-transform: rotateY(-45deg) translateZ(48px);
+			    -o-transform: rotateY(-45deg) translateZ(48px);
+			    -ms-transform: rotateY(-45deg) translateZ(48px);
+			    transform: rotateY(-45deg) translateZ(48px);
+			}
+			#logo .back { 
+			    background-position: left;
+			    -webkit-transform: rotateY(-45deg) rotateX(-180deg) rotateZ(180deg) translateZ(48px);
+			    -moz-transform: rotateY(-45deg) rotateX(-180deg) rotateZ(180deg) translateZ(48px);
+			    -o-transform: rotateY(-45deg) rotateX(-180deg) rotateZ(180deg) translateZ(48px);
+			    -ms-transform: rotateY(-45deg) rotateX(-180deg) rotateZ(180deg) translateZ(48px);
+			    transform: rotateY(-45deg) rotateX(-180deg) rotateZ(180deg) translateZ(48px);
+			}
+			#logo .right { 
+			    background-position: right;
+    			-webkit-transform: rotateY(45deg) translateZ(48px);
+    			-moz-transform: rotateY(45deg) translateZ(48px);
+    			-o-transform: rotateY(45deg) translateZ(48px);
+    			-ms-transform: rotateY(45deg) translateZ(48px);
+    			transform: rotateY(45deg) translateZ(48px);
+			}
+			#logo .left { 
+			    background-position: right;
+			    -webkit-transform: rotateY(-135deg) translateZ(48px);
+			    -moz-transform: rotateY(-135deg) translateZ(48px);
+			    -o-transform: rotateY(-135deg) translateZ(48px);
+			    -ms-transform: rotateY(-135deg) translateZ(48px);
+			    transform: rotateY(-135deg) translateZ(48px);
+			}
+			#logo .top { 
+			    height: 96px; 
+			    background: #e34f26;
+			    -webkit-transform: rotateY(-45deg) rotateX(90deg) translateZ(43px);
+			    -moz-transform: rotateY(-45deg) rotateX(90deg) translateZ(43px);
+			    -o-transform: rotateY(-45deg) rotateX(90deg) translateZ(43px);
+			    -ms-transform: rotateY(-45deg) rotateX(90deg) translateZ(43px);
+			    transform: rotateY(-45deg) rotateX(90deg) translateZ(43px);
+			}
+			#logo .bottom { 
+				height: 70px;
+				text-align: center;
+				padding: 13px 0; 
+				-webkit-transform: rotateY(45deg) rotateX(-90deg) translateZ(98px);
+				-moz-transform: rotateY(45deg) rotateX(-90deg) translateZ(98px);
+				-o-transform: rotateY(45deg) rotateX(-90deg) translateZ(98px);
+				-ms-transform: rotateY(45deg) rotateX(-90deg) translateZ(98px);
+				transform: rotateY(45deg) rotateX(-90deg) translateZ(98px); 
+				background: #ffffff;
+			}
+		p { 
+			left: 50%;
+			bottom: 21px;
+			position: absolute;
+			padding: 5px 13px 3px;
+			margin-left: -178px;
+			font-size: 12px;
+			color: #666;
+			background: white;
+			background: rgba(0,0,0,.05);
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+			-moz-box-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+			-webkit-box-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+			box-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+		}
+		a, a:visited {
+			color: #333;
+			font-weight: bold;
+			text-decoration: none;
+			-webkit-transiton: .2s all linear;
+			-moz-transiton: .2s all linear;
+			-o-transiton: .2s all linear;
+			-ms-transiton: .2s all linear;
+			transiton: .2s all linear;
+		}
+		.cssanimations #logo, .cssanimations #background {
+			-webkit-animation-duration: 18s;
+    		-moz-animation-duration: 18s;
+    		-o-animation-duration: 18s;
+    		-ms-animation-duration: 18s;
+    		animation-duration: 18s;
+			-webkit-animation-iteration-count: infinite;
+			-moz-animation-iteration-count: infinite;
+			-o-animation-iteration-count: infinite;
+			-ms-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+			-moz-animation-timing-function: linear;
+			-o-animation-timing-function: linear;
+			-ms-animation-timing-function: linear;
+			animation-timing-function: linear;
+		}
+		.cssanimations #logo { 
+		    -webkit-animation-name: logo;
+    		-moz-animation-name: logo;
+        	-o-animation-name: logo;
+            -ms-animation-name: logo;
+            animation-name: logo;
+		}
+		.cssanimations #background { 
+		    -webkit-animation-name: sunray;
+    		-moz-animation-name: sunray;
+    		-o-animation-name: sunray;
+    		-ms-animation-name: sunray;
+    		animation-name: sunray;
+		}
+		@-webkit-keyframes sunray {
+			from { -webkit-transform: rotateZ(0) translateZ(-100px); }
+			to { -webkit-transform: rotateZ(-359deg) translateZ(-100px); }
+		}
+		@-moz-keyframes sunray {
+			from { -moz-transform: rotateZ(0) translateZ(-100px); }
+			to { -moz-transform: rotateZ(-359deg) translateZ(-100px); }
+		}
+		@-o-keyframes sunray {
+			from { -o-transform: rotateZ(0) translateZ(-100px); }
+			to { -o-transform: rotateZ(-359deg) translateZ(-100px); }
+		}
+		@-ms-keyframes sunray {
+			from { -ms-transform: rotateZ(0) translateZ(-100px); }
+			to { -ms-transform: rotateZ(-359deg) translateZ(-100px); }
+		}
+		@keyframes sunray {
+			from { transform: rotateZ(0) translateZ(-100px); }
+			to { transform: rotateZ(-359deg) translateZ(-100px); }
+		}
+		@-webkit-keyframes logo {
+			from { -webkit-transform: rotateY(0); }
+			to { -webkit-transform: rotateY(-359deg); }
+		}
+		@-moz-keyframes logo {
+			from { -moz-transform: rotateY(0); }
+			to { -moz-transform: rotateY(-359deg); }
+		}
+		@-o-keyframes logo {
+			from { -o-transform: rotateY(0); }
+			to { -o-transform: rotateY(-359deg); }
+		}
+		@-ms-keyframes logo {
+			from { -ms-transform: rotateY(0); }
+			to { -ms-transform: rotateY(-359deg); }
+		}
+		@keyframes logo {
+			from { transform: rotateY(0); }
+			to { transform: rotateY(-359deg); }
+		}
+		/* Fallback for browsers which don't support 3d transforms */
+		.no-csstransforms3d #logo { width: 128px; height: 145px; margin: -73px 0 0 -64px; background: url(img/logo.png); }
+			.no-csstransforms3d #logo h1 { left: 12px; }
+			.no-csstransforms3d #logo figure { display: none; }
+	</style>
+	<!-- Put Tracking Tag Here -->
+	
+	<!-- End Tracking Tag Here -->
+</head>
+<body>
+	<canvas id="background" height="1380" width="1380" style="margin-top: -359px; margin-left: -84.5px;">This doesn't work, because your browser doesn't support HTML5.</canvas>
+	<div id="logo">
+		<h1></h1>
+		<div id="hint" title="Location services for realtime attacks!">Realtime tracking of your malicious actors.</div>
+		<figure class="front"></figure>
+		<figure class="back"></figure>
+		<figure class="right"></figure>
+		<figure class="left"></figure>
+		<figure class="top"></figure>
+		<figure class="bottom">Dependable Security</figure>
+	</div>
+<script type="text/javascript" src="HTML5Patch_files/modernizr-1.js"></script>
+<script type="text/javascript">
+	var canvas = document.getElementById("background");
+	var bg = canvas.getContext("2d");
+	var dimensions = { x: 0, y: 0 }, diagonal = 0;
+	var mousePos = { x: 0, y: 0 }, startPos = { x: 0, y: 0 }, rotation = 0, pressed = false, _lastFrameTime = new Date().getTime(), _totalTime = 0, _counter = 0;
+	var logo = document.getElementById("logo");
+	var domPrefix = "", browserPrefix = "";
+	var inputDown, inputMove, inputUp;
+	
+	function init(){
+		// get dom- and browserPrefixes for css styles
+		if (typeof(document.body.style.transform) != 'undefined') {
+		} else if (typeof(document.body.style.MozTransform) != 'undefined') {
+			domPrefix = "Moz", browserPrefix = "-moz-";
+		}else if (typeof(document.body.style.webkitTransform) != 'undefined') {
+			domPrefix = "webkit", browserPrefix = "-webkit-";
+		} else if (typeof(document.body.style.OTransform) != 'undefined') {
+			domPrefix = "O", browserPrefix = "-o-";
+		} else if (typeof(document.body.style.msTransform) != 'undefined') {
+			domPrefix = "ms", browserPrefix = "-ms-";
+		} else if (typeof(document.body.style.KhtmlTransform) != 'undefined') {
+			domPrefix = "Khtml", browserPrefix = "-khtml-";
+		}
+		
+		// detect touch for bindings
+		if (Modernizr.touch) {
+			inputDown = "touchstart";
+			inputMove = "touchmove";
+			inputUp = "touchend";
+		}
+		else {
+			inputDown = "mousedown";
+			inputMove = "mousemove";
+			inputUp = "mouseup";
+		}
+		
+		// initiate resize
+		window.addEventListener( "resize", start, false );
+
+		if(Modernizr.csstransforms3d){
+			document.addEventListener( inputDown, mousedownHandler, false );
+			document.addEventListener( inputUp, mouseupHandler, false );
+		}
+		
+		// lets go
+		start();
+		
+		// animation loop
+		if(!Modernizr.cssanimations){
+			setInterval( loop, 1000 / 60 );
+		}
+		if(!Modernizr.csstransforms3d){
+			logo.style[domPrefix+"AnimationName"] = "none";
+		}
+	}
+	
+	function start(){
+		dimensions = { x: document.body.clientWidth, y: document.body.clientHeight };
+		diagonal = Math.round( Math.sqrt( dimensions.x*dimensions.x + dimensions.y*dimensions.y ) );
+		canvas.height = diagonal;
+		canvas.width = diagonal;
+		canvas.style.marginTop = -(diagonal-dimensions.y)/2+"px";
+		canvas.style.marginLeft = -(diagonal-dimensions.x)/2+"px";
+		canvas.style[domPrefix+"TransformOrigin"] = diagonal/2+"px "+diagonal/2+"px";
+		// set canvas center to document center
+		bg.translate(diagonal/2, diagonal/2);
+		var sunray = new star(30, 50, "white");
+		sunray.draw();
+	}
+	
+	function star(spikes, radius, color){
+		this.spikes = spikes;
+		this.radius = radius;
+		this.radiants = 2 * Math.PI/spikes;
+		this.offsetX = radius * Math.cos(this.radiants);
+		this.offsetY = radius * Math.sin(this.radiants);
+		this.starLength = diagonal;
+		this.EndY = this.starLength * Math.tan(this.radiants/2);
+		bg.fillStyle = color;
+	}
+	
+	star.prototype = {
+		draw: function(){
+			bg.clearRect(-this.starLength, -this.starLength, this.starLength*2, this.starLength*2);
+			bg.beginPath();
+			bg.arc(0, 0, this.radius, 0, Math.PI*2,true);
+			bg.fill();
+			for(var i = 0; i<this.spikes; i++){
+				bg.beginPath();
+				bg.moveTo(this.radius,0);
+				bg.lineTo(this.starLength, this.EndY);
+				bg.lineTo(this.offsetX, this.offsetY);
+				bg.fill();
+				bg.rotate(this.radiants);
+			}
+		}
+	}
+	
+	function loop(){
+		var time = new Date().getTime();
+		_counter++;
+		_totalTime += ( time - _lastFrameTime );
+		_lastFrameTime = time;
+		// rotate the sunray
+		canvas.style[domPrefix+"Transform"] = "rotate("+ - --rotation +"deg)";
+		// rotate the logo
+		if( !pressed && Modernizr.csstransforms3d ) {
+			logo.style[domPrefix+"Transform"] = "rotateY("+ rotation +"deg)";
+		}
+	}
+	
+	function turn(){
+		var diffX = mousePos.x - startPos.x;
+		var diffY = mousePos.y - startPos.y;
+		logo.style[domPrefix+"Transform"] = "rotateX("+-diffY+"deg) rotateY("+diffX+"deg)";
+	}
+	
+	function normalizedX(event){
+		return Modernizr.touch ? event.touches[0].pageX : event.pageX;
+	}	
+	
+	function normalizedY(event){
+		return Modernizr.touch ? event.touches[0].pageY : event.pageY;
+	}
+	
+	function mousedownHandler(event){
+		event.preventDefault();
+		startPos.x = normalizedX(event);
+		startPos.y = normalizedY(event);
+		pressed = true;
+		if( Modernizr.cssanimations ) {
+			logo.style[domPrefix+"AnimationName"] = "none";
+		}
+		document.addEventListener( inputMove, mousemoveHandler, false );
+	}
+	
+	function mousemoveHandler(event){
+		event.preventDefault();
+		mousePos.x = normalizedX(event);
+		mousePos.y = normalizedY(event);
+		turn();
+	}
+	
+	function mouseupHandler(event){
+		var approxAngle = Modernizr.cssanimations ? 0 : (rotation - 1000*_counter/_totalTime);
+		logo.style[domPrefix+"Transition"] = browserPrefix+"transform 1s ease-in-out";	
+		logo.style[domPrefix+"Transform"] = "rotateY("+ approxAngle +"deg) rotateX(0)";
+		logo.addEventListener(domPrefix+"TransitionEnd", transitionEnd, false );
+		document.removeEventListener( inputMove, mousemoveHandler, false );
+	}
+	
+	function transitionEnd(){
+		pressed = false;
+		logo.style[domPrefix+"Transition"] = "none";
+		if ( Modernizr.cssanimations ) {
+			logo.style[domPrefix+"AnimationName"] = "logo";
+		}
+		logo.removeEventListener( domPrefix+"TransitionEnd", transitionEnd, false );
+	}
+
+	init();
+</script>
+
+</body></html>
