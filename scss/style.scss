@@ -1,0 +1,66 @@
+$color-spaaaace: #313640;
+$color-neonpink: #FF0092;
+$color-neonpurple: #BA01FF;
+
+body{
+  background-color: $color-spaaaace;
+  overflow: hidden;
+}
+
+.grid{
+  top: -400px;
+  bottom: -400px;
+  left: -400px;
+  right: -400px;
+  position: absolute;
+  
+  background-color: $color-spaaaace;
+  background-image: linear-gradient($color-neonpink 1px, transparent 2px),
+  linear-gradient(90deg, $color-neonpink 1px, transparent 2px);
+  background-size:3% 3%, 3% 3%;
+  background-position:0 0, 0 0;
+  
+  transform: perspective(300px) rotateX(80deg);
+}
+
+.eightys-text{
+  color: $color-neonpink;
+  font-family: 'Audiowide', cursive;
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 80px;
+  margin: auto;
+  text-shadow: 0 0 12px rgba($color-neonpurple, 0.8);
+}
+
+
+.eightys-paragraph{
+  color: $color-neonpink;
+  background-color: #FFFFFF;
+}
+
+
+label{
+  font-family: 'Audiowide', cursive;
+  color: $color-neonpink;
+  text-shadow: 0 0 12px rgba($color-neonpurple, 0.8);
+}  
+  input:checked ~ .grid{
+    animation: throughSpace 2s linear;
+    animation-iteration-count: infinite;
+  }
+
+
+@keyframes throughSpace{
+  0%{
+    transform: perspective(300px) rotateX(80deg) translateY(0%);
+  }
+  100%{
+    transform: perspective(300px) rotateX(80deg) translateY(5.8%);
+  }
+}
