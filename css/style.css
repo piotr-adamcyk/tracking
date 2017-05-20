@@ -26,26 +26,6 @@ body {
   color: #FF0092;
   font-family: 'Audiowide', cursive;
   font-size: 30px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  height: 80px;
-  margin: auto;
-  text-shadow: 0 0 12px rgba(186, 1, 255, 0.8);
-}
-
-.eightys-text2 {
-  color: #FF0092;
-  font-family: 'Audiowide', cursive;
-  font-size: 30px;
-  position: absolute;
-  top: 200px;
-  bottom: 0;
-  left: 0;
-  right: 0;
   text-align: center;
   height: 80px;
   margin: auto;
