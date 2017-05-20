@@ -37,6 +37,18 @@ body {
   text-shadow: 0 0 12px rgba(186, 1, 255, 0.8);
 }
 
+.eightys-paragraph {
+  color: #FF0092;
+  font-family: 'Audiowide', cursive;
+  font-size: 15px;
+  text-shadow: 0 0 12px rgba(186, 1, 255, 0.8);
+  background-color: #313640;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
 label {
   font-family: 'Audiowide', cursive;
   color: #FF0092;
