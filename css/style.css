@@ -1,17 +1,26 @@
 body {
-  background-color: #000000;
+  padding-top: 40px;
+	background-color: #000000;
   overflow: hidden;
 }
 
+p {
+	font-family: 'Exo 2', sans-serif;
+	  color: #ccc;
+  font-size: 16px;
+line-height: 22px;
+  text-shadow: 0 0 12px rgba(186, 1, 255, 0.8);
+}
 .grid {
+	z-index: 1;
   top: -400px;
   bottom: -400px;
   left: -400px;
   right: -400px;
   position: absolute;
   background-color: #000000;
-  background-image: -webkit-linear-gradient(#FF0092 1px, transparent 2px), -webkit-linear-gradient(left, #FF0092 1px, transparent 2px);
-  background-image: linear-gradient(#FF0092 1px, transparent 2px), linear-gradient(90deg, #FF0092 1px, transparent 2px);
+  background-image: -webkit-linear-gradient(#666666 1px, transparent 2px), -webkit-linear-gradient(left, #666666 1px, transparent 2px);
+  background-image: linear-gradient(#666666 1px, transparent 2px), linear-gradient(90deg, #666666 1px, transparent 2px);
   background-size: 3% 3%, 3% 3%;
   background-position: 0 0, 0 0;
   -webkit-transform: perspective(300px) rotateX(80deg);
@@ -22,36 +31,42 @@ body {
           animation-iteration-count: infinite;
 }
 
+.content {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
 .eightys-text {
-  color: #FF0092;
+  color: #ccc;
   font-family: 'Audiowide', cursive;
   font-size: 30px;
   text-align: center;
-  height: 50px;
-  margin: auto;
+  margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
   text-shadow: 0 0 12px rgba(186, 1, 255, 0.8);
 }
 
 .eightys-subtitle {
-  color: #FF0092;
+  color: #e7e7e7;
   font-family: 'Audiowide', cursive;
   font-size: 15px;
   text-align: center;
-  height: 30px;
   margin: auto;
   text-shadow: 0 0 12px rgba(186, 1, 255, 0.8);
 }
 
-.eightys-paragraph {
-  color: #FF00AF;
-  font-family: 'Audiowide', cursive;
-  font-size: 15px;
-  text-shadow: 0 0 12px rgba(186, 1, 255, 0.8);
-  background-color: #313640;
-  padding: 1pc;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+.eightys-paragraph {	
+	z-index: 1000;
+	position: relative;
+  color: #666;
+	margin-top: 30px;
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
   border-style: solid;
   border-width: 1px;
 }
