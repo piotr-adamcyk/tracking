@@ -8,10 +8,10 @@ body{
 }
 
 .grid{
-  top: -400px;
-  bottom: -400px;
-  left: -400px;
-  right: -400px;
+  top: -30pc;
+  bottom: -30pc;
+  left: -30pc;
+  right: -30pc;
   position: absolute;
   
   background-color: $color-spaaaace;
@@ -20,7 +20,7 @@ body{
   background-size:3% 3%, 3% 3%;
   background-position:0 0, 0 0;
   
-  transform: perspective(300px) rotateX(80deg);
+  transform: perspective(20pc) rotateX(80deg);
 }
 
 .eightys-text{
